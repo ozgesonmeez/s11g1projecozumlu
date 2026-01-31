@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { data } from "../data"; // Data dosyanın yolundan emin ol
+import { data } from "../data"; 
 
 export const ProductContext = createContext();
 
