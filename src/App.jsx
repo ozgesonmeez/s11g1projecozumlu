@@ -9,13 +9,7 @@ import ProductContextProvider from './contexts/ProductContext';
 import CartContextProvider from './contexts/CartContext';
 
 function App() {
-  const [products, setProducts] = useState(data);
-  const [cart, setCart] = useState([]);
-
-  const addItem = (item) => {
-    // verilen itemi sepete ekle
-  };
-
+  
 return (
     <div className="App">
       <ProductContextProvider>
@@ -26,11 +20,11 @@ return (
         
         <main className="content">
          
-          <Route exact path="/" component={Products}>
+          <Route exact path="/">
             <Products />
           </Route>
 
-          <Route path="/cart" component={ShoppingCart}>
+          <Route path="/cart" >
             <ShoppingCart/>
           </Route>
         </main>
